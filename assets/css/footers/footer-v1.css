@@ -48,12 +48,12 @@
 .footer-v1 .copyright {
 	background: #222;
 	border-top: none;
-	padding: 10px 0 5px;
+	
 }
 
 .footer-v1 .copyright p {
 	color: #eee;
-	margin-top: 14px;
+    margin-top: 8px;
 }
 
 .footer-v1 .copyright a {

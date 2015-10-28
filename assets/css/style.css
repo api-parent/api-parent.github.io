@@ -36,6 +36,9 @@ body {
     position: absolute;
     
 }
+.container.content-sm.home_layout {
+    margin-top: -36px;
+}
 th{
 	white-space: nowrap;;
 }
