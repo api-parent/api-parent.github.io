@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!--> 
+<html lang="en" ng-app="app"> <!--<![endif]-->  
+<head>
+    <title>Welcome to Parent Medicare</title>
+
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="share_plus.ico">
+
+    <!-- CSS Global Compulsory -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- CSS Header and Footer -->
+    <link rel="stylesheet" href="assets/css/headers/header-v8.css">
+    <link rel="stylesheet" href="assets/css/footers/footer-v1.css">
+
+    <!-- CSS Implementing Plugins -->
+    <link rel="stylesheet" href="assets/plugins/animate.css">
+    <link rel="stylesheet" href="assets/plugins/line-icons/line-icons.css">
+    <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/theme-colors/default.css">
+    <link rel="stylesheet" href="assets/css/xeditable.css">
+    <link rel="stylesheet" href="assets/css/headers/simpletextrotator.css">
+    <link rel="stylesheet" href="assets/plugins/sky-forms-pro/skyforms/css/sky-forms.css">
+    <link rel="stylesheet" href="assets/plugins/sky-forms-pro/skyforms/custom/custom-sky-forms.css">
+
+
+    <!-- CSS Customization -->
+    <link rel="stylesheet" href="assets/css/custom.css">
+</head> 
+
+<body class="boxed-layout container">
+
+<div class="wrapper">
+<!--=== Header v3 ===-->    
+    <div class="header-v3 header-sticky">
+        <!-- Navbar -->
+        <div class="navbar navbar-default mega-menu" role="navigation">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="fa fa-bars"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">
+                        <img id="logo-header" src="assets/img/official-logo.png" alt="Parent Medicare">
+                    </a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse mega-menu navbar-responsive-collapse">
+                    <div class="container">
+                        <ul class="nav navbar-nav">
+                            <!-- Home -->
+                            <li class="">
+                                <a href="index.html">
+                                    About US
+                                </a>
+                            </li>
+                            <!-- End Home -->
+                            <li class="">
+                                <a href="services.html">
+                                    Services
+                                </a>
+                            </li>
+                           <!-- Blog -->
+                            <li class="dropdown">
+                                <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
+                                    Hospitals
+                                </a>
+                                <ul class="dropdown-menu">
+                                   
+                                    <li><a href="">MOU</a></li>
+                                    <li><a href="hospital-signup.html">Hospitals Registration</a></li>                            
+                                </ul>
+                            </li>
+                            <!-- End Blog -->
+                            <!-- Blog -->
+                            <li class="dropdown active">
+                                <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
+                                    Clients
+                                </a>
+                                <ul class="dropdown-menu">
+                                   
+                                    <li><a href="">Contract</a></li>
+                                    <li class="active"><a href="client-signup.html">Clients Registration</a></li>                            
+                                </ul>
+                            </li>
+                            <!-- End Blog -->
+                             <li class="">
+                                <a href="javascript:void(0);">
+                                    Contacts US
+                                </a>
+                            </li>
+                            <!-- Misc Pages -->
+                            <li class="">
+                                <a href="login">
+                                    Login
+                                </a>
+                            </li>                    
+                            <!-- End Misc Pages -->
+                        </ul>
+
+                    </div><!--/end container-->
+                </div><!--/navbar-collapse-->
+            </div>    
+        </div>            
+        <!-- End Navbar -->
+    </div>
+    <!--=== End Header v3 ===-->
+    <!--=== Breadcrumbs ===-->
+    <div class="breadcrumbs">
+        <div class="container">
+            <h1 class="pull-left">Registration </h1>
+            <ul class="pull-right breadcrumb">
+                <li><a href="index.html">Home</a></li>
+                <li class="active">Registration</li>
+            </ul>
+        </div>
+    </div><!--/breadcrumbs-->
+    <!--=== End Breadcrumbs ===-->
+
+    <!--=== Content Part ===-->
+    <div class="container content">
+       <div class="row">
+              <div class="col-md-12 col-sm-8">
+                <header><h2 align="center" style="color:#2F87C7">Client Registration</h2></header>
+                 <form   class="sky-form" novalidate="novalidate">
+                 <header>Parent Details</header>
+               
+                 <table class="table">
+                    <thead>
+                        <tr>
+                            <th>First Name</th>
+                            <th class="hidden-sm">Last Name</th>
+                            <th>Gender</th>
+                            <th>DOB</th>
+                            <th>Age</th>
+                            <th>E-mail</th>
+                            <th>Phone</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <label class="input">
+                                            <input type="text" name="firstname" placeholder="First name">
+                                </label>
+                            </td>
+                            <td>
+                                <label class="input">
+                                            <input type="text" name="lastname" placeholder="Last name">
+                                </label>
+                            </td>
+                            <td> 
+                                <select class="form-control" id="gender">
+                            <option>Male</option>
+                            <option>Female</option>
+                            <option>Other</option>
+
+                            </select>
+                        </td>
+                            <td>
+                           <label class="input">
+                                                <i class="icon-append fa fa-calendar"></i>
+                                                <input type="date" name="start" id="start" placeholder="birthdate" class="hasDatepicker">
+                                            </label>
+
+                            </td>
+                             <td>
+                                <label class="input">
+                                            <input type="text" name="age" placeholder="age">
+                                </label>
+                            </td>
+                             <td>
+                                <label class="input">
+                                            <input type="email" name="email" placeholder="email">
+                                </label>
+                            </td>
+                             <td>
+                                <label class="input">
+                                            <input type="phone" name="phone" placeholder="phone">
+                                </label>
+                            </td>                         
+                        </tr>
+
+                         <tr>
+                            <td>
+                                <label class="input">
+                                            <input type="text" name="firstname" placeholder="First name">
+                                </label>
+                            </td>
+                            <td>
+                                <label class="input">
+                                            <input type="text" name="lastname" placeholder="Last name">
+                                </label>
+                            </td>
+                            <td> 
+                                <select class="form-control" id="gender">
+                            <option>Male</option>
+                            <option>Female</option>
+                            <option>Other</option>
+
+                            </select>
+                        </td>
+                            <td>
+                           <label class="input">
+                                                <i class="icon-append fa fa-calendar"></i>
+                                                <input type="date" name="start" id="start" placeholder="birthdate" class="hasDatepicker">
+                                            </label>
+
+                            </td>
+                             <td>
+                                <label class="input">
+                                            <input type="text" name="age" placeholder="age">
+                                </label>
+                            </td>
+                             <td>
+                                <label class="input">
+                                            <input type="email" name="email" placeholder="email">
+                                </label>
+                            </td>
+                             <td>
+                                <label class="input">
+                                            <input type="phone" name="phone" placeholder="phone">
+                                </label>
+                            </td>                         
+                        </tr>
+                        
+                       
+                    </tbody>
+                </table>
+
+                <div class="row">
+                    <div class="col-md-6">
+                    <fieldset>
+                        <div class="row">
+                         <section>
+                            <h2>Enter Address</h2>
+                            <label class="textarea">
+                                <i class="icon-append fa fa-location-arrow"></i>
+                                <textarea rows="5" name="comment" placeholder="Tell us about your project"></textarea>
+                            </label>
+                        </section>
+                    </fieldset>
+                    </div>
+                    <div class="col-md-6">
+                    <fieldset>
+                        <div class="row">
+                         <section>
+                            <h2>Choose District</h2>
+                                    <label class="select">
+                                        <select name="District">
+                                            <option value="0" selected="" disabled="">District</option>
+                                            <option value="1">Chennai</option>
+                                            <option value="2">Kanchipuram</option>
+                                            <option value="3">Vilupuram</option>
+                                        </select>
+                                        <i></i>
+                                    </label>
+                                </section>
+                        <section>
+                                    <label class="select">
+                                        <select name="City">
+                                            <option value="0" selected="" disabled="">City</option>
+                                            <option value="1">Male</option>
+                                            <option value="2">Female</option>
+                                            <option value="3">Other</option>
+                                        </select>
+                                        <i></i>
+                                    </label>
+                                </section>
+                    </fieldset>
+                    </div>
+                </div>
+                <header>NRI Details</header>
+                   <table class="table">
+                    <thead>
+                        <tr>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>E-mail</th>
+                            <th>Phone</th>
+                            <th>Address</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <label class="input">
+                                            <input type="text" name="firstname" placeholder="First name">
+                                </label>
+                            </td>
+                            <td>
+                                <label class="input">
+                                            <input type="text" name="lastname" placeholder="Last name">
+                                </label>
+                            </td>
+                           <td>
+                                <label class="input">
+                                            <input type="email" name="email" placeholder="email">
+                                </label>
+                            </td>
+                             <td>
+                                <label class="input">
+                                            <input type="phone" name="phone" placeholder="phone">
+                                </label>
+                            </td>
+                             <td>
+                                <label class="input">
+                                            <input type="text" name="text" placeholder="Address">
+                                </label>
+                            </td>                           
+                        </tr>
+
+                    </tbody>
+                </table>
+
+                <header>Relative Details</header>
+                   <table class="table">
+                    <thead>
+                        <tr>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>E-mail</th>
+                            <th>Phone</th>
+                            <th>Address</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <label class="input">
+                                            <input type="text" name="firstname" placeholder="First name">
+                                </label>
+                            </td>
+                            <td>
+                                <label class="input">
+                                            <input type="text" name="lastname" placeholder="Last name">
+                                </label>
+                            </td>
+                           <td>
+                                <label class="input">
+                                            <input type="email" name="email" placeholder="email">
+                                </label>
+                            </td>
+                             <td>
+                                <label class="input">
+                                            <input type="phone" name="phone" placeholder="phone">
+                                </label>
+                            </td>
+                             <td>
+                                <label class="input">
+                                            <input type="text" name="text" placeholder="Address">
+                                </label>
+                            </td>                           
+                        </tr>
+
+                    </tbody>
+                </table>
+                 <footer>
+                         <div class="row">
+                            <section class="col col-6">
+                              <button type="submit" class="btn-u btn-block">Submit</button>
+                           </section>
+                            <section class="col col-6">
+                             <button type="submit" class="btn-u btn-u-red btn-block">Reset</button>
+                            </section>
+                        </div>
+                    </footer>  
+
+                </form>
+                   
+             
+             </div>
+        </div>
+    </div><!--/container-->  
+
+ <!--=== End Content Part ===-->
+
+<!--=== Footer Version 1 ===-->
+   <div class="footer-v1">
+        
+
+        <div class="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">                     
+                        <p>
+                            2015 &copy; All Rights Reserved parentmedicare.com.
+                         
+                        </p>
+                    </div>
+                     <div class="col-md-4">                     
+                        <p>
+                           <a href="">Privacy Policy</a> | <a href="">Terms of Service</a>
+                        </p>
+                    </div>
+
+                </div>
+            </div> 
+        </div><!--/copyright-->
+    </div>
+    <!--=== End Footer Version 1 ===-->
+</div><!--/End Wrapepr-->
+
+<!-- JS Global Compulsory -->           
+<script type="text/javascript" src="assets/plugins/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="assets/plugins/jquery/jquery-migrate.min.js"></script>
+<script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+<!-- JS Implementing Plugins -->
+<script type="text/javascript" src="assets/plugins/back-to-top.js"></script>
+<script type="text/javascript" src="assets/plugins/smoothScroll.js"></script>
+<script src="assets/plugins/sky-forms-pro/skyforms/js/jquery.validate.min.js"></script>
+<script src="assets/plugins/sky-forms-pro/skyforms/js/jquery.maskedinput.min.js"></script>
+<script src="assets/plugins/sky-forms-pro/skyforms/js/jquery-ui.min.js"></script>
+<script src="assets/plugins/sky-forms-pro/skyforms/js/jquery.form.min.js"></script>
+<!-- JS Customization -->
+<script type="text/javascript" src="assets/js/custom.js"></script>
+<!-- JS Page Level -->           
+<script type="text/javascript" src="assets/js/app.js"></script>
+
+<!--[if lt IE 9]>
+    <script src="assets/plugins/respond.js"></script>
+    <script src="assets/plugins/html5shiv.js"></script>
+    <script src="assets/plugins/placeholder-IE-fixes.js"></script>
+    <script src="assets/plugins/sky-forms-pro/skyforms/js/sky-forms-ie8.js"></script>
+<![endif]-->
+
+<!--[if lt IE 10]>
+    <script src="assets/plugins/sky-forms/version-2.0.1/js/jquery.placeholder.min.js"></script>
+<![endif]-->      
+
+</body>
+</html>

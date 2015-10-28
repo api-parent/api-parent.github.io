@@ -1,0 +1,1317 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!--> 
+<html lang="en" ng-app="app"> <!--<![endif]-->  
+<head>
+    <title>Welcome to Parent Medicare</title>
+
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="share_plus.ico">
+
+    <!-- CSS Global Compulsory -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- CSS Header and Footer -->
+    <link rel="stylesheet" href="assets/css/headers/header-v8.css">
+    <link rel="stylesheet" href="assets/css/footers/footer-v1.css">
+
+    <!-- CSS Implementing Plugins -->
+    <link rel="stylesheet" href="assets/plugins/animate.css">
+    <link rel="stylesheet" href="assets/plugins/line-icons/line-icons.css">
+    <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/theme-colors/default.css">
+    <link rel="stylesheet" href="assets/css/xeditable.css">
+    <link rel="stylesheet" href="assets/css/headers/simpletextrotator.css">
+    <link rel="stylesheet" href="assets/plugins/sky-forms-pro/skyforms/css/sky-forms.css">
+    <link rel="stylesheet" href="assets/plugins/sky-forms-pro/skyforms/custom/custom-sky-forms.css">
+
+
+    <!-- CSS Customization -->
+    <link rel="stylesheet" href="assets/css/custom.css">
+</head> 
+
+<body class="boxed-layout container">
+
+<div class="wrapper">
+<!--=== Header v3 ===-->    
+    <div class="header-v3 header-sticky">
+        <!-- Navbar -->
+        <div class="navbar navbar-default mega-menu" role="navigation">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="fa fa-bars"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">
+                        <img id="logo-header" src="assets/img/official-logo.png" alt="Parent Medicare">
+                    </a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse mega-menu navbar-responsive-collapse">
+                    <div class="container">
+                        <ul class="nav navbar-nav">
+                            <!-- Home -->
+                            <li class="">
+                                <a href="index.html">
+                                    About US
+                                </a>
+                            </li>
+                            <!-- End Home -->
+                            <li class="">
+                                <a href="services.html">
+                                    Services
+                                </a>
+                            </li>
+                           <!-- Blog -->
+                            <li class="dropdown">
+                                <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
+                                    Hospitals
+                                </a>
+                                <ul class="dropdown-menu">
+                                   
+                                    <li><a href="">MOU</a></li>
+                                    <li><a href="hospital-signup.html">Hospitals Registration</a></li>                            
+                                </ul>
+                            </li>
+                            <!-- End Blog -->
+                            <!-- Blog -->
+                            <li class="dropdown">
+                                <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
+                                    Clients
+                                </a>
+                                <ul class="dropdown-menu">
+                                   
+                                    <li><a href="">Contract</a></li>
+                                    <li><a href="client-signup.html">Clients Registration</a></li>                            
+                                </ul>
+                            </li>
+                            <!-- End Blog -->
+                             <li class="">
+                                <a href="javascript:void(0);">
+                                    Contacts US
+                                </a>
+                            </li>
+                            <!-- Misc Pages -->
+                           <li class="dropdown active">
+                                <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
+                                    Howdy Admin !
+                                </a>
+                                <ul class="dropdown-menu">
+                                   
+                                    <li><a href="settings.html">Settings</a></li>
+                                    <li><a href="">Logout</a></li>                            
+                                </ul>
+                            </li>                              
+                            <!-- End Misc Pages -->
+                        </ul>
+
+                    </div><!--/end container-->
+                </div><!--/navbar-collapse-->
+            </div>    
+        </div>            
+        <!-- End Navbar -->
+    </div>
+    <!--=== End Header v3 ===-->
+     <!--=== Breadcrumbs ===-->
+    <div class="breadcrumbs">
+        <div class="container">
+            <h1 class="pull-left">Administration</h1>
+            <ul class="pull-right breadcrumb">
+                <li><a href="settings.html">Home</a></li>
+                <li class="active">Settings</li>
+            </ul>
+        </div><!--/container-->
+    </div><!--/breadcrumbs-->
+    <!--=== End Breadcrumbs ===-->
+    <!--=== Profile ===-->
+    <div class="container content profile">   
+        <div class="row">
+          <!-- Profile Content -->            
+            <div class="col-md-12">
+                <div class="profile-body margin-bottom-20">
+                    
+                    <div class="tab-v1">
+                        <ul class="nav nav-justified nav-tabs">
+                            <li class="active"><a data-toggle="tab" href="#profile">Client</a></li>
+                            <li><a data-toggle="tab" href="#passwordTab">Hospital</a></li>
+                            
+                        </ul>          
+                        <div class="tab-content">
+                            <div id="profile" class="profile-edit tab-pane fade in active">
+                               
+                               
+                                <div class="table-search-v1 margin-bottom-20">
+                                    <h2 class="heading-md">Client Details</h2>
+                                   
+                        <div class="table-responsive">
+                            <table class="table table-hover table-bordered table-striped">
+                                <thead>
+                                 <tr>
+                                        <th>Pid</th>
+                                        <th class="hidden-sm">First Name</th>
+                                        <th>Last Name</th>
+                                        <th>Location</th>
+                                        <th style="width: 100px;">Phone</th>
+                                        <th>NRI Name</th>
+                                        <th>View</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <a href="#">1</a>
+                                        </td>
+                                        <td class="td-width">Sakthi </td>
+                                        <td>
+                                           Vel    
+                                        </td>
+                                        <td>
+                                            <div class="m-marker">
+                                               <i class="color-green fa fa-map-marker"></i>
+                                                USA
+                                            </div> 
+                                            
+                                        </td>
+                                        <td><span>+91- 9585183727</span>
+                                        </td>
+                                        <td>
+                                         <span>Display NRI Name</span>
+                                        </td>
+                                        <td align="center">
+                                            <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion-1" href="#collapse-One" aria-expanded="false">
+                                            <i class="fa fa-eye"></i>
+                                           </a>
+                                        </td>
+                                    </tr>
+                                <tr id="collapse-One" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+                                    <td colspan="8" class="hiddenRow">
+                                        <div id="profile" class="profile-edit tab-pane fade in active">
+                       
+                      <div class="row">
+                         <div class="col-md-6">
+                            <h2 class="heading-md">Parent Details</h2>
+                                </div>
+                                 
+                                    </div>
+
+                   
+                  
+                     <div class="table-responsive">
+                         <!-- table -->
+                    <table class="table table-hover table-bordered table-striped">
+                     <thead>
+                    <tr>
+                    <th>#</th>
+                    <th>FName</th>
+                    <th>LName</th>
+                    <th>Gender</th>
+                    <th>DoB</th>
+                    <th>Age</th>
+                    <th>E-mail</th> 
+                    <th>Phone</th>
+                  
+                    </th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <!-- ngRepeat: user in users | filter:filterUser -->
+                    <tr>
+                     <td>
+                    <!-- editable username (text with validation) -->
+                    <span>
+                    1
+                    </span>
+                    </td>
+                    <td>
+                    <!-- editable username (text with validation) -->
+                    <span>
+                    Sakthi
+                    </span>
+                    </td>
+                    <td>
+                    <!-- editable status (select-local) -->
+                    <span>
+                     Vel
+                    </span>
+                    </td>
+                    <td>
+                    <!-- editable group (select-remote) -->
+                   <span>
+                    Male
+                  </span>
+                    </td>
+                    <td>
+                    <!-- editable group (select-remote) -->
+                    <span>
+                    
+                     15/06/1992
+                    </span>
+                    </td>
+                    <td>
+                    <!-- editable group (select-remote) -->
+                    <span>
+                     23
+                    </span>
+                    </td>
+                    <td>
+                    <!-- editable group (select-remote) -->
+                    <span>
+                     m.sakthideveloper@gmail.com
+                    </span>
+                    </td>
+                     <td>
+                    <!-- editable group (select-remote) -->
+                    <span>
+                     9585183727
+                    </span>
+                    </td>
+                   
+                    </tr>
+                    <tr>
+                     <td>
+                    <!-- editable username (text with validation) -->
+                    <span>
+                    2
+                    </span>
+                    </td>
+                    <td>
+                    <!-- editable username (text with validation) -->
+                    <span>
+                    Vignesh
+                    </span>
+                    </td>
+                    <td>
+                    <!-- editable status (select-local) -->
+                    <span>
+                     Raja
+                    </span>
+                    </td>
+                    <td>
+                    <!-- editable group (select-remote) -->
+                   <span>
+                    Male
+                  </span>
+                    </td>
+                    <td>
+                    <!-- editable group (select-remote) -->
+                    <span>
+                    
+                     15/06/1992
+                    </span>
+                    </td>
+                    <td>
+                    <!-- editable group (select-remote) -->
+                    <span>
+                     23
+                    </span>
+                    </td>
+                    <td>
+                    <!-- editable group (select-remote) -->
+                    <span>
+                     vigneshraja23@gmail.com
+                    </span>
+                    </td>
+                     <td>
+                    <!-- editable group (select-remote) -->
+                    <span>
+                     9585183727
+                    </span>
+                    </td>
+                    
+                    </tr>
+                    </tbody>
+                </table>
+               </div>
+                <br>
+               
+                     <div class="row">
+                      <div class="col-md-6">
+                        <h2 class="heading-md">Location Details</h2>
+                      </div>
+                     
+                    </div>
+
+     <div class="row">
+        <div class="col-md-6">
+             <span>
+                <h2 class="heading-md">Address</h2> 
+            </span>
+              <p>
+                B-Block, G Floor C, Sunnyside Apartment, Near National Model School, Link Road, Coimbatore - 641 028
+              </p>
+        </div>
+
+    <div class="col-md-6">
+      <!-- editable status (select-local) -->
+       <span><h2 class="heading-md">Location:</h2> </span>
+      <span>
+        Not set
+      </span>
+    </div> 
+     
+
+    </div> 
+
+      <div class="row">
+          <div class="col-md-6">
+            <h2 class="heading-md">Relation Details</h2>
+          </div>
+          
+        </div>
+            <div class="table-responsive">
+                         <!-- table -->
+                    <table class="table table-hover table-bordered table-striped">
+                     <thead>
+                    <tr>
+                    <th>#</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>E-mail</th>
+                    <th>Phone</th>
+                    <th>Address</th>
+                    </th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <!-- ngRepeat: user in users | filter:filterUser -->
+                    <tr>
+                     <td>
+                    <!-- editable username (text with validation) -->
+                    <span>
+                    1
+                    </span>
+                    </td>
+                    <td>
+                    <!-- editable username (text with validation) -->
+                    <span>
+                    Sakthi
+                    </span>
+                    </td>
+                    <td>
+                    <!-- editable status (select-local) -->
+                    <span>
+                     Vel
+                    </span>
+                    </td>
+                    <td>
+                    <!-- editable group (select-remote) -->
+                    <span>
+                     m.sakthideveloper@gmail.com
+                    </span>
+                    </td>
+                    <td>
+                    <!-- editable group (select-remote) -->
+                    <span>
+                     9585183727
+                    </span>
+                    </td>
+                    <td>
+                    <!-- editable group (select-remote) -->
+                    <span>
+                     USA
+                    </span>
+                    </td>
+                   
+                    </tr>
+                    <tr>
+                     <td>
+                    <!-- editable username (text with validation) -->
+                    <span>
+                    2
+                    </span>
+                    </td>
+                    <td>
+                    <!-- editable username (text with validation) -->
+                    <span>
+                    Vignesh
+                    </span>
+                    </td>
+                    <td>
+                    <!-- editable status (select-local) -->
+                    <span>
+                     Raja
+                    </span>
+                    </td>
+                    <td>
+                    <!-- editable group (select-remote) -->
+                    <span>
+                     vigneshraja23@gmail.com
+                    </span>
+                    </td>
+                    <td>
+                    <!-- editable group (select-remote) -->
+                    <span>
+                     9585183727
+                    </span>
+                    </td>
+                    <td>
+                    <!-- editable group (select-remote) -->
+                    <span>
+                     USA
+                    </span>
+                    </td>
+                    
+                    </tr>
+                    </tbody>
+                </table>
+             </div>
+            </div>
+        </td>
+        </tr>
+                                
+                                    <tr>
+                                        <td>
+                                            <a href="#">2</a>
+                                        </td>
+                                        <td class="td-width">Sakthi </td>
+                                        <td>
+                                           Vel    
+                                        </td>
+                                        <td>
+                                            <div class="m-marker">
+                                               <i class="color-green fa fa-map-marker"></i>
+                                                USA
+                                            </div> 
+                                            
+                                        </td>
+                                        <td><span>+91- 9585183727</span>
+                                        </td>
+                                        <td>
+    
+                                             <span>Display NRI Name</span>
+                                        </td>
+                                        <td align="center">
+                                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion-1" href="#collapse-Two" aria-expanded="true">
+                                            <i class="fa fa-eye"></i>
+                                           </a>
+                                        </td>
+                                    </tr>
+                                    <tr id="collapse-Two" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+                                    <td colspan="8" class="hiddenRow">
+                                        <div id="profile" class="profile-edit tab-pane fade in active">
+                       
+                      <div class="row">
+                         <div class="col-md-6">
+                            <h2 class="heading-md">Parent Details</h2>
+                                </div>
+                                 
+                                    </div>
+
+                   
+                  
+                     <div class="table-responsive">
+                         <!-- table -->
+                    <table class="table table-hover table-bordered table-striped">
+                     <thead>
+                    <tr>
+                    <th>#</th>
+                    <th>FName</th>
+                    <th>LName</th>
+                    <th>Gender</th>
+                    <th>DoB</th>
+                    <th>Age</th>
+                    <th>E-mail</th> 
+                    <th>Phone</th>
+                  
+                    </th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <!-- ngRepeat: user in users | filter:filterUser -->
+                    <tr>
+                     <td>
+                    <!-- editable username (text with validation) -->
+                    <span>
+                    1
+                    </span>
+                    </td>
+                    <td>
+                    <!-- editable username (text with validation) -->
+                    <span>
+                    Sakthi
+                    </span>
+                    </td>
+                    <td>
+                    <!-- editable status (select-local) -->
+                    <span>
+                     Vel
+                    </span>
+                    </td>
+                    <td>
+                    <!-- editable group (select-remote) -->
+                   <span>
+                    Male
+                  </span>
+                    </td>
+                    <td>
+                    <!-- editable group (select-remote) -->
+                    <span>
+                    
+                     15/06/1992
+                    </span>
+                    </td>
+                    <td>
+                    <!-- editable group (select-remote) -->
+                    <span>
+                     23
+                    </span>
+                    </td>
+                    <td>
+                    <!-- editable group (select-remote) -->
+                    <span>
+                     m.sakthideveloper@gmail.com
+                    </span>
+                    </td>
+                     <td>
+                    <!-- editable group (select-remote) -->
+                    <span>
+                     9585183727
+                    </span>
+                    </td>
+                   
+                    </tr>
+                    <tr>
+                     <td>
+                    <!-- editable username (text with validation) -->
+                    <span>
+                    2
+                    </span>
+                    </td>
+                    <td>
+                    <!-- editable username (text with validation) -->
+                    <span>
+                    Vignesh
+                    </span>
+                    </td>
+                    <td>
+                    <!-- editable status (select-local) -->
+                    <span>
+                     Raja
+                    </span>
+                    </td>
+                    <td>
+                    <!-- editable group (select-remote) -->
+                   <span>
+                    Male
+                  </span>
+                    </td>
+                    <td>
+                    <!-- editable group (select-remote) -->
+                    <span>
+                    
+                     15/06/1992
+                    </span>
+                    </td>
+                    <td>
+                    <!-- editable group (select-remote) -->
+                    <span>
+                     23
+                    </span>
+                    </td>
+                    <td>
+                    <!-- editable group (select-remote) -->
+                    <span>
+                     vigneshraja23@gmail.com
+                    </span>
+                    </td>
+                     <td>
+                    <!-- editable group (select-remote) -->
+                    <span>
+                     9585183727
+                    </span>
+                    </td>
+                    
+                    </tr>
+                    </tbody>
+                </table>
+               </div>
+                <br>
+               
+                     <div class="row">
+                      <div class="col-md-6">
+                        <h2 class="heading-md">Location Details</h2>
+                      </div>
+                     
+                    </div>
+
+     <div class="row">
+        <div class="col-md-6">
+             <span>
+                <h2 class="heading-md">Address</h2> 
+            </span>
+              <p>
+                B-Block, G Floor C, Sunnyside Apartment, Near National Model School, Link Road, Coimbatore - 641 028
+              </p>
+        </div>
+
+    <div class="col-md-6">
+      <!-- editable status (select-local) -->
+       <span><h2 class="heading-md">Location:</h2> </span>
+      <span>
+        Not set
+      </span>
+    </div> 
+     
+
+    </div> 
+
+      <div class="row">
+          <div class="col-md-6">
+            <h2 class="heading-md">Relation Details</h2>
+          </div>
+          
+        </div>
+            <div class="table-responsive">
+                         <!-- table -->
+                    <table class="table table-hover table-bordered table-striped">
+                     <thead>
+                    <tr>
+                    <th>#</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>E-mail</th>
+                    <th>Phone</th>
+                    <th>Address</th>
+                    </th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <!-- ngRepeat: user in users | filter:filterUser -->
+                    <tr>
+                     <td>
+                    <!-- editable username (text with validation) -->
+                    <span>
+                    1
+                    </span>
+                    </td>
+                    <td>
+                    <!-- editable username (text with validation) -->
+                    <span>
+                    Sakthi
+                    </span>
+                    </td>
+                    <td>
+                    <!-- editable status (select-local) -->
+                    <span>
+                     Vel
+                    </span>
+                    </td>
+                    <td>
+                    <!-- editable group (select-remote) -->
+                    <span>
+                     m.sakthideveloper@gmail.com
+                    </span>
+                    </td>
+                    <td>
+                    <!-- editable group (select-remote) -->
+                    <span>
+                     9585183727
+                    </span>
+                    </td>
+                    <td>
+                    <!-- editable group (select-remote) -->
+                    <span>
+                     USA
+                    </span>
+                    </td>
+                   
+                    </tr>
+                    <tr>
+                     <td>
+                    <!-- editable username (text with validation) -->
+                    <span>
+                    2
+                    </span>
+                    </td>
+                    <td>
+                    <!-- editable username (text with validation) -->
+                    <span>
+                    Vignesh
+                    </span>
+                    </td>
+                    <td>
+                    <!-- editable status (select-local) -->
+                    <span>
+                     Raja
+                    </span>
+                    </td>
+                    <td>
+                    <!-- editable group (select-remote) -->
+                    <span>
+                     vigneshraja23@gmail.com
+                    </span>
+                    </td>
+                    <td>
+                    <!-- editable group (select-remote) -->
+                    <span>
+                     9585183727
+                    </span>
+                    </td>
+                    <td>
+                    <!-- editable group (select-remote) -->
+                    <span>
+                     USA
+                    </span>
+                    </td>
+                    
+                    </tr>
+                    </tbody>
+                </table>
+             </div>
+            </div>
+        </td>
+        </tr>
+          </tbody>
+          </table>
+      </div> 
+     <ul class="pagination">
+         <li><a href="#">«</a></li>
+        <li class="active"><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">»</a></li>
+        </ul>
+</div>
+                        
+                            </div>
+                            <!--Password Tab start-->
+                        <div id="passwordTab" class="profile-edit tab-pane fade">  
+                               <h2 class="heading-md">Hospital Details</h2>
+                                <!--table start-->
+                            <div class="table-responsive">
+                            <table class="table table-hover table-bordered table-striped">
+                                <thead>
+                                 <tr>
+                                        <th>#</th>
+                                        <th class="hidden-sm">H Name</th>
+                                        <th>Location</th>
+                                        <th>E-mail</th>
+                                        <th style="width: 100px;">Tel No</th>
+                                        <th>No of Beds</th>
+                                        <th>ICU Beds</th>
+                                        <th>Views</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <a href="#">1</a>
+                                        </td>
+                                        <td class="td-width">Appollo Hospital</td>
+                                        <td>
+                                             <div class="m-marker">
+                                                <a href="#"><i class="color-green fa fa-map-marker"></i></a>
+                                                <a class="display-b" href="#">USA</a>
+                                            </div>   
+                                        </td>
+                                        <td>
+                                           <span>info@appollo.com</span>
+                                            
+                                        </td>
+                                        <td><span>+91- 9585183727</span>
+                                        </td>
+                                        <td>
+                                         <span><a href="#">2</a></span>
+                                        </td>
+                                           <td>
+                                         <span><a href="#">4</a></span>
+                                        </td>
+                                        <td align="center">
+                                            <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion-1" href="#collapse-Three" aria-expanded="false">
+                                            <i class="fa fa-eye"></i>
+                                           </a>
+                                        </td>
+                                    </tr>
+                                    <tr id="collapse-Three" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+                                    <td colspan="8" class="hiddenRow">
+
+                                        <div class="row">
+                                      <div class="col-md-6">
+                                        <h2 class="heading-md">Hospital Details</h2>
+                                      </div>
+                                     
+                                    </div>
+
+                   
+                
+                     <div class="table-responsive">
+                         <!-- table -->
+                    <table class="table table-hover table-bordered table-striped">
+                     <thead>
+                    <tr>
+                                        <th>#</th>
+                                        <th class="hidden-sm">HName</th>
+                                        <th>Location</th>
+                                        <th>Address</th>
+                                        <th>E-mail</th>
+                                        <th>Tel No</th>
+                                        <th>No of Beds</th>
+                                        <th>No of ICU Beds</th>
+                   
+                   
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                     <td>
+                    <!-- editable username (text with validation) -->
+                    <span >
+                    1
+                    </span>
+                    </td>
+                    <td>
+                    <!-- editable username (text with validation) -->
+                    <span>
+                    nme
+                    </span>
+                    </td>
+                    <td>
+                    <!-- editable status (select-local) -->
+                    <span>
+                     location
+                    </span>
+                    </td>
+                    <td>
+                    <!-- editable group (select-remote) -->
+                    <span>
+                     address 
+                    </span>
+                    </td>
+                    <td>
+                    <!-- editable group (select-remote) -->
+                    <span>
+                     email 
+                    </span>
+                    </td>
+                    <td>
+                    <!-- editable group (select-remote) -->
+                    <span>
+                     tel 
+                    </span>
+                    </td>
+                     <td>
+                    <!-- editable group (select-remote) -->
+                    <span>
+                     normalBeds 
+                    </span>
+                    </td>
+                    <td>
+                    <!-- editable group (select-remote) -->
+                    <span>
+                     icuBeds 
+                    </span>
+                    </td>
+                    
+                    </tr>
+                    </tbody>
+                    </table>
+                    </div>
+                    </div>
+
+                    <!--admin section-->
+                    <div>
+                       <div class="row">
+                                      <div class="col-md-6">
+                                        <h2 class="heading-md">Admin</h2>
+                                      </div>
+                                     
+                                    </div>
+
+                   
+                  
+                     <div class="table-responsive">
+                         <!-- table -->
+                    <table class="table table-hover table-bordered table-striped">
+                     <thead>
+                    <tr>
+                                        <th>#</th>
+                                        <th class="hidden-sm">Role</th>
+                                        <th>Name</th>
+                                        <th>E-mail</th>
+                                        <th>Phone</th>
+                                        
+                    
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <!-- ngRepeat: user in users | filter:filterUser -->
+                    <tr>
+                     <td>
+                    <!-- editable username (text with validation) -->
+                    <span>
+                    1
+                    </span>
+                    </td>
+                    <td>
+                    <!-- editable username (text with validation) -->
+                    <span>
+                    SRM
+                    </span>
+                    </td>
+                    <td>
+                    <!-- editable status (select-local) -->
+                    <span>
+                     Chennai
+                    </span>
+                    </td>
+                    <td>
+                    <!-- editable group (select-remote) -->
+                    <span>
+                     name@example.com
+                    </span>
+                    </td>
+                    <td>
+                    <!-- editable group (select-remote) -->
+                    <span>
+                     123 456 0000
+                    </span>
+                    </td>
+                     </tr>
+                    </tbody>
+                </table>
+               </div>
+                    </form>
+                    </div>
+                    <!--admin end -->
+
+                    <!--consultant start-->
+                        <div>
+                       <div class="row">
+                                      <div class="col-md-6">
+                                        <h2 class="heading-md">Consultant</h2>
+                                      </div>
+                                    
+                                    </div>
+
+                   
+                   
+                     <div class="table-responsive">
+                         <!-- table -->
+                    <table class="table table-hover table-bordered table-striped">
+                     <thead>
+                    <tr>
+                                        <th>#</th>
+                                        <th class="hidden-sm">Speciality</th>
+                                        <th>Name</th>
+                                        <th>Qualification</th>
+                                        <th>E-mail</th>
+                                        <th>Phone</th>
+                                        <th>Experience</th>
+                                        
+                    
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <!-- ngRepeat: user in users | filter:filterUser -->
+                    <tr>
+                     <td>
+                    <!-- editable username (text with validation) -->
+                    <span>
+                    1
+                    </span>
+                    </td>
+                    <td>
+                    <!-- editable username (text with validation) -->
+                    <span>
+                    special
+                    </span>
+                    </td>
+                    <td>
+                    <!-- editable status (select-local) -->
+                    <span>
+                     Sakthivel
+                    </span>
+                    </td>
+                    <td>
+                    <!-- editable status (select-local) -->
+                    <span>
+                     B.E(ECE)
+                    </span>
+                    </td>
+                    <td>
+                    <!-- editable group (select-remote) -->
+                    <span>
+                     name@example.com
+                    </span>
+                    </td>
+                    <td>
+                    <!-- editable group (select-remote) -->
+                    <span>
+                     123 456 0000
+                    </span>
+                    </td>
+                    <td>
+                    <!-- editable group (select-remote) -->
+                    <span>
+                     1.7
+                    </span>
+                    </td>
+                    
+                   </tr>
+                    </tbody></table>
+                    </div>
+                   
+                    </div>
+                    <!--consultant end-->
+
+                    <!--facility start-->
+
+                     <div>
+                     <div class="row">
+                                      <div class="col-md-6">
+                                        <h2 class="heading-md">Facility Section</h2>
+                                      </div>
+                                    </div>
+ 
+<div class="table-responsive">
+    <!-- table -->
+   <table class="table table-hover table-bordered table-striped">
+     <thead>
+                    <tr>
+                    <th>#</th>
+                    <th class="hidden-sm">Instrument</th>
+                    <th>Status</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+
+      
+      <!-- ngRepeat: user in users | filter:filterUser -->
+      <tr>
+         <td>
+                    <!-- editable username (text with validation) -->
+                    <span>
+                    1
+                    </span>
+                    </td>
+        <td>
+          <!-- editable username (text with validation) -->
+          <span>
+            Digital X-ray
+          </span>
+        </td>
+        <td>
+          <!-- editable status (select-local) -->
+         <span>
+       Yes
+         </span>
+        </td>
+
+      
+      </tr><tr>
+         <td>
+                    <!-- editable username (text with validation) -->
+                    <span>
+                    2
+                    </span>
+                    </td>
+        <td>
+          <!-- editable username (text with validation) -->
+          <span>
+            Ultra Sound Scan
+          </span>
+        </td>
+        <td>
+          <!-- editable status (select-local) -->
+         <span>
+       Yes
+         </span>
+        </td>
+
+       
+      </tr>
+      <tr>
+         <td>
+                    <!-- editable username (text with validation) -->
+                    <span>
+                    3
+                    </span>
+                    </td>
+        <td>
+          <!-- editable username (text with validation) -->
+          <span>
+            CT-Scan
+          </span>
+        </td>
+        <td>
+          <!-- editable status (select-local) -->
+         <span>
+       Yes
+         </span>
+        </td>
+      </tr>
+  </tbody>
+    </table>
+</div>
+
+</div>
+                    <!--facility end-->
+                                        
+                                        </td>
+                                        </tr>
+
+                                    <tr>
+                                        <td>
+                                            <a href="#">1</a>
+                                        </td>
+                                        <td class="td-width">Appollo Hospital</td>
+                                        <td>
+                                             <div class="m-marker">
+                                                <a href="#"><i class="color-green fa fa-map-marker"></i></a>
+                                                <a class="display-b" href="#">USA</a>
+                                            </div>   
+                                        </td>
+                                        <td>
+                                           <span>info@appollo.com</span>
+                                            
+                                        </td>
+                                        <td><span>+91- 9585183727</span>
+                                        </td>
+                                        <td>
+                                         <span><a href="#">2</a></span>
+                                        </td>
+                                           <td>
+                                         <span><a href="#">4</a></span>
+                                        </td>
+                                         <td align="center">
+                                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion-1" href="#collapse-Two" aria-expanded="true">
+                                            <i class="fa fa-eye"></i>
+                                           </a>
+                                        </td>
+                                    </tr>
+                                   <tr>
+                                        <td>
+                                            <a href="#">1</a>
+                                        </td>
+                                        <td class="td-width">Appollo Hospital</td>
+                                        <td>
+                                             <div class="m-marker">
+                                                <a href="#"><i class="color-green fa fa-map-marker"></i></a>
+                                                <a class="display-b" href="#">USA</a>
+                                            </div>   
+                                        </td>
+                                        <td>
+                                           <span>info@appollo.com</span>
+                                            
+                                        </td>
+                                        <td><span>+91- 9585183727</span>
+                                        </td>
+                                        <td>
+                                         <span><a href="#">2</a></span>
+                                        </td>
+                                           <td>
+                                         <span><a href="#">4</a></span>
+                                        </td>
+                                         <td align="center">
+                                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion-1" href="#collapse-Two" aria-expanded="true">
+                                            <i class="fa fa-eye"></i>
+                                           </a>
+                                        </td>
+                                    </tr>
+                                   
+                                </tbody>
+                            </table>
+                        </div> 
+                        <!--table end-->
+
+
+                        <ul class="pagination">
+                                <li><a href="#">«</a></li>
+                                <li class="active"><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a href="#">4</a></li>
+                                <li><a href="#">»</a></li>
+                            </ul>
+                               
+                            </div>  
+                            <!--Password end Tab -->
+
+
+                         </div>
+                    </div>    
+                </div>
+            </div>
+            <!-- End Profile Content -->            
+        </div><!--/end row-->
+    </div>      
+    <!--=== End Profile ===-->
+
+ <!--=== Footer Version 1 ===-->
+    <div class="footer-v1">
+        
+
+        <div class="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">                     
+                        <p>
+                            2015 &copy; All Rights Reserved parentmedicare.com.
+                             <a href="">Privacy Policy</a> | <a href="">Terms of Service</a>
+                         
+                        </p>
+                    </div>
+                     <div class="col-md-4">                     
+                        <p class="pull-right">
+                          
+                            Powered by <a href="http://trenmax.in" target="_blank" class="tren"><img src="assets/img/trenmax_logo.png" width="120" height="30"></a>
+                        </p>
+                    </div>
+
+                </div>
+            </div> 
+        </div><!--/copyright-->
+    </div>
+    <!--=== End Footer Version 1 ===-->
+</div><!--/wrapper-->
+
+<!-- JS Global Compulsory -->           
+<script type="text/javascript" src="assets/plugins/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="assets/plugins/jquery/jquery-migrate.min.js"></script>
+<script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+<!-- JS Implementing Plugins -->
+<script type="text/javascript" src="assets/plugins/back-to-top.js"></script>
+<script type="text/javascript" src="assets/plugins/smoothScroll.js"></script>
+<script type="text/javascript" src="assets/plugins/sky-forms-pro/skyforms/js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="assets/plugins/sky-forms-pro/skyforms/js/jquery.validate.min.js"></script>
+<script type="text/javascript" src="assets/plugins/sky-forms-pro/skyforms/js/jquery.maskedinput.min.js"></script>
+<script type="text/javascript" src="assets/plugins/scrollbar/js/jquery.mCustomScrollbar.concat.min.js"></script>
+<!-- JS Customization -->
+<script type="text/javascript" src="assets/js/custom.js"></script>
+<!-- JS Page Level -->           
+<script type="text/javascript" src="assets/js/app.js"></script>
+<script type="text/javascript" src="assets/js/plugins/datepicker.js"></script>
+
+<script type="text/javascript">
+    jQuery(document).ready(function() {
+        App.init();
+        App.initScrollBar();
+        Datepicker.initDatepicker();
+          
+    });
+</script>
+<!--[if lt IE 9]>
+    <script src="assets/plugins/respond.js"></script>
+    <script src="assets/plugins/html5shiv.js"></script>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="assets/plugins/sky-forms-pro/skyforms/js/sky-forms-ie8.js"></script>
+<![endif]-->
+
+<!--[if lt IE 10]>
+    <script src="assets/plugins/sky-forms-pro/skyforms/js/jquery.placeholder.min.js"></script>
+<![endif]-->
+
+</body>
+</html> 

@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!--> 
+<html lang="en" ng-app="app"> <!--<![endif]-->  
+<head>
+    <title>Welcome to Parent Medicare</title>
+
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="share_plus.ico">
+
+    <!-- CSS Global Compulsory -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- CSS Header and Footer -->
+    <link rel="stylesheet" href="assets/css/headers/header-v8.css">
+    <link rel="stylesheet" href="assets/css/footers/footer-v1.css">
+
+    <!-- CSS Implementing Plugins -->
+    <link rel="stylesheet" href="assets/plugins/animate.css">
+    <link rel="stylesheet" href="assets/plugins/line-icons/line-icons.css">
+    <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/theme-colors/default.css">
+    <link rel="stylesheet" href="assets/css/xeditable.css">
+    <link rel="stylesheet" href="assets/css/headers/simpletextrotator.css">
+    <link rel="stylesheet" href="assets/plugins/sky-forms-pro/skyforms/css/sky-forms.css">
+    <link rel="stylesheet" href="assets/plugins/sky-forms-pro/skyforms/custom/custom-sky-forms.css">
+
+
+    <!-- CSS Customization -->
+    <link rel="stylesheet" href="assets/css/custom.css">
+</head> 
+
+<body class="boxed-layout container">
+
+<div class="wrapper">
+<!--=== Header v3 ===-->    
+    <div class="header-v3 header-sticky">
+        <!-- Navbar -->
+        <div class="navbar navbar-default mega-menu" role="navigation">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="fa fa-bars"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">
+                        <img id="logo-header" src="assets/img/official-logo.png" alt="Parent Medicare">
+                    </a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse mega-menu navbar-responsive-collapse">
+                    <div class="container">
+                        <ul class="nav navbar-nav">
+                            <!-- Home -->
+                            <li class="">
+                                <a href="index.html">
+                                    About US
+                                </a>
+                            </li>
+                            <!-- End Home -->
+                            <li class="">
+                                <a href="services.html">
+                                    Services
+                                </a>
+                            </li>
+                           <!-- Blog -->
+                            <li class="dropdown">
+                                <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
+                                    Hospitals
+                                </a>
+                                <ul class="dropdown-menu">
+                                   
+                                    <li><a href="">MOU</a></li>
+                                    <li><a href="hospital-signup.html">Hospitals Registration</a></li>                            
+                                </ul>
+                            </li>
+                            <!-- End Blog -->
+                            <!-- Blog -->
+                            <li class="dropdown">
+                                <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
+                                    Clients
+                                </a>
+                                <ul class="dropdown-menu">
+                                   
+                                    <li><a href="">Contract</a></li>
+                                    <li><a href="client-signup.html">Clients Registration</a></li>                            
+                                </ul>
+                            </li>
+                            <!-- End Blog -->
+                             <li class="">
+                                <a href="javascript:void(0);">
+                                    Contacts US
+                                </a>
+                            </li>
+                            <!-- Misc Pages -->
+                           <li class="dropdown active">
+                                <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
+                                     Howdy Client !
+                                </a>
+                                <ul class="dropdown-menu">
+                                   
+                                    <li><a href="settings.html">Settings</a></li>
+                                    <li><a href="client-signup.html">MR Upload</a></li>
+                                    <li><a href="feedback.html">Feedback</a></li> 
+                                    <li><a href="">Logout</a></li>                            
+                                </ul>
+                            </li>                            
+                            <!-- End Misc Pages -->
+                        </ul>
+
+                    </div><!--/end container-->
+                </div><!--/navbar-collapse-->
+            </div>    
+        </div>            
+        <!-- End Navbar -->
+    </div>
+    <!--=== End Header v3 ===-->
+
+     <!--=== Breadcrumbs ===-->
+    <div class="breadcrumbs">
+        <div class="container">
+            <h1 class="pull-left">Client</h1>
+            <ul class="pull-right breadcrumb">
+                <li><a href="settings.html">Client</a></li>
+                <li class="active">Login</li>
+            </ul>
+        </div><!--/container-->
+    </div><!--/breadcrumbs-->
+    <!--=== End Breadcrumbs ===-->
+
+    <!--=== Profile ===-->
+    <div class="container content profile">   
+        <div class="row">
+        	
+         <!-- Profile Content -->            
+            <div class="col-md-12">
+                <div class="profile-body margin-bottom-20">
+                    <div class="row margin-bottom-10"></div>
+                       <div id="profile" class="profile-edit tab-pane fade in active">
+                       
+
+                 <div  ng-controller="ParentCtrl">
+                     <div class="row">
+                         <div class="col-md-6">
+                            <h2 class="heading-md">Parent Details</h2>
+                                </div>
+                                  <div class="pull-right">
+                                   <button class="btn-u btn-u-default" type="button" ng-show="!tableform.$visible" ng-click="tableform.$show()">Edit</button>
+                                      </div>
+                                    </div>
+
+                   
+                    <form editable-form name="tableform" onaftersave="saveTable()" oncancel="cancel()">
+                     <div class="table-responsive">
+                         <!-- table -->
+                    <table class="table table-hover table-bordered table-striped">
+                     <thead>
+                    <tr>
+                    <th>#</th>
+                    <th>FName</th>
+                    <th>LName</th>
+                    <th>Gender</th>
+                    <th>DoB</th>
+                    <th>Age</th>
+                    <th>E-mail</th> 
+                    <th>Phone</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr ng-repeat="user in users | filter:filterUser">
+                     <td>
+                    <!-- editable username (text with validation) -->
+                    <span editable-text="user.id" e-form="tableform">
+                    {{ user.id || 'empty' }}
+                    </span>
+                    </td>
+                    <td>
+                    <!-- editable username (text with validation) -->
+                    <span editable-text="user.FName" e-form="tableform">
+                    {{ user.FName || 'empty' }}
+                    </span>
+                    </td>
+                    <td>
+                    <!-- editable status (select-local) -->
+                    <span editable-text="user.LName" e-form="tableform">
+                     {{ user.LName || 'empty' }}
+                    </span>
+                    </td>
+                    <td>
+                    <!-- editable group (select-remote) -->
+                   <span editable-select="user.gender" e-form="tableform" e-ng-options="s.value as s.text for s in genders">
+                    {{ showGenders(user) }}
+                  </span>
+                    </td>
+                    <td>
+                    <!-- editable group (select-remote) -->
+                    <span editable-bsdate="user.dob" e-form="tableform" e-datepicker-popup="dd-MMMM-yyyy">
+                    
+                     {{ (user.dob | date:"dd/MM/yyyy") || 'empty' }}
+                    </span>
+                    </td>
+                    <td>
+                    <!-- editable group (select-remote) -->
+                    <span editable-text="user.age" e-form="tableform">
+                     {{ user.age || 'empty' }}
+                    </span>
+                    </td>
+                    <td>
+                    <!-- editable group (select-remote) -->
+                    <span editable-email="user.email" e-form="tableform">
+                     {{ user.email || 'empty' }}
+                    </span>
+                    </td>
+                     <td>
+                    <!-- editable group (select-remote) -->
+                    <span editable-text="user.phone" e-form="tableform">
+                     {{ user.phone || 'empty' }}
+                    </span>
+                    </td>
+                    </tr>
+                    </table>
+
+                    <!-- buttons -->
+                    
+                    <div class="btn-form" ng-show="tableform.$visible">
+                    <button type="submit" ng-disabled="tableform.$waiting" class="btn btn-primary">save</button>
+                    <button type="button" ng-disabled="tableform.$waiting" ng-click="tableform.$cancel()" class="btn btn-default">cancel</button>
+                    </div> 
+                    </tbody>
+                    </table>
+                        </div>
+                    </form>
+                    </div>
+                    <br>
+                    
+                  <div ng-controller="LocationCtrl">
+                                     <div class="row">
+                                      <div class="col-md-6">
+                                        <h2 class="heading-md">Location Details</h2>
+                                      </div>
+                                      <div class="pull-right">
+                                       <button class="btn-u btn-u-default" type="button" ng-click="editableForm.$show()" ng-show="!editableForm.$visible">Edit</button>
+                                      </div>
+                                    </div>
+ <form editable-form name="editableForm" onaftersave="saveUser()" id="sky-form" class="sky-form">
+    
+
+
+     <div class="row">
+        <section class="col col-6 col-md-offset-1">
+             <span class="title"><h2 class="heading-md">Address</h2> </span>
+              <span editable-textarea="user.address" e-name="address"  e-rows="3" e-cols="60" e-required>
+                {{ user.address || 'empty' }}
+              </span>
+        </section>
+     
+
+      <section class="col col-4">
+      <!-- editable status (select-local) -->
+       <span class="title"><h2 class="heading-md">Location:</h2> </span>
+      <span editable-select="user.location" e-name="location" e-ng-options="s.value as s.text for s in locations">
+        {{ (location | filter:{value: user.location})[0].text || 'Not set' }}
+      </span>
+    </section> 
+    </div> 
+
+    
+
+    <div>
+     
+     
+      <!-- buttons to submit / cancel form -->
+      <span ng-show="editableForm.$visible">
+        <button type="submit" class="btn btn-primary" ng-disabled="editableForm.$waiting">
+          Save
+        </button>
+        <button type="button" class="btn btn-default" ng-disabled="editableForm.$waiting" ng-click="editableForm.$cancel()">
+          Cancel
+        </button>
+      </span>
+    </div>
+  </form>  
+</div>
+                           
+                       <div  ng-controller="RelationCtrl">
+                        <br>
+                       <div class="row">
+                                      <div class="col-md-6 ">
+                                        <h2 class="heading-md">NRI Details</h2>
+                                      </div>
+                                      <div class="pull-right">
+                                       <button class="btn-u btn-u-default" type="button" ng-show="!tableform.$visible" ng-click="tableform.$show()">Edit</button>
+                                      </div>
+                                    </div>
+
+                   
+                    <form editable-form name="tableform" onaftersave="saveTable()" oncancel="cancel()">
+                     <div class="table-responsive">
+                         <!-- table -->
+                    <table class="table table-hover table-bordered table-striped">
+                     <thead>
+                    <tr>
+                    <th>#</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>E-mail</th>
+                    <th>Phone</th>
+                    <th>Address</th> 
+                    
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr ng-repeat="user in users | filter:filterUser">
+                     <td>
+                    <!-- editable username (text with validation) -->
+                    <span editable-text="user.id" e-form="tableform">
+                    {{ user.id || 'empty' }}
+                    </span>
+                    </td>
+                    <td>
+                    <!-- editable username (text with validation) -->
+                    <span editable-text="user.firstName" e-form="tableform">
+                    {{ user.firstName || 'empty' }}
+                    </span>
+                    </td>
+                    <td>
+                    <!-- editable status (select-local) -->
+                    <span editable-text="user.lastName" e-form="tableform">
+                     {{ user.lastName || 'empty' }}
+                    </span>
+                    </td>
+                    <td>
+                    <!-- editable group (select-remote) -->
+                    <span editable-text="user.email" e-form="tableform">
+                     {{ user.email || 'empty' }}
+                    </span>
+                    </td>
+                    <td>
+                    <!-- editable group (select-remote) -->
+                    <span editable-text="user.phone" e-form="tableform">
+                     {{ user.phone || 'empty' }}
+                    </span>
+                    </td>
+                    <td>
+                    <!-- editable group (select-remote) -->
+                    <span editable-text="user.address" e-form="tableform">
+                     {{ user.address || 'empty' }}
+                    </span>
+                    </td>
+                   
+                    </tr>
+                    </table>
+
+                    <!-- buttons -->
+                    
+                    <div class="btn-form" ng-show="tableform.$visible">
+                   
+                    <button type="submit" ng-disabled="tableform.$waiting" class="btn btn-primary">save</button>
+                    <button type="button" ng-disabled="tableform.$waiting" ng-click="tableform.$cancel()" class="btn btn-default">cancel</button>
+                    </div> 
+                    </tbody>
+                    </table>
+                        </div>
+                    </form>
+                    </div>
+
+
+                    <div  ng-controller="RelationCtrl">
+                       <div class="row">
+                                      <div class="col-md-6">
+                                        <h2 class="heading-md">Relation Details</h2>
+                                      </div>
+                                      <div class="pull-right">
+                                       <button class="btn-u btn-u-default" type="button" ng-show="!tableform.$visible" ng-click="tableform.$show()">Edit</button>
+                                      </div>
+                                    </div>
+
+                   
+                    <form editable-form name="tableform" onaftersave="saveTable()" oncancel="cancel()">
+                     <div class="table-responsive">
+                         <!-- table -->
+                    <table class="table table-hover table-bordered table-striped">
+                     <thead>
+                    <tr>
+                    <th>#</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>E-mail</th>
+                    <th>Phone</th>
+                    <th>Address</th> 
+                   
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr ng-repeat="user in users | filter:filterUser">
+                     <td>
+                    <!-- editable username (text with validation) -->
+                    <span editable-text="user.id" e-form="tableform">
+                    {{ user.id || 'empty' }}
+                    </span>
+                    </td>
+                    <td>
+                    <!-- editable username (text with validation) -->
+                    <span editable-text="user.firstName" e-form="tableform">
+                    {{ user.firstName || 'empty' }}
+                    </span>
+                    </td>
+                    <td>
+                    <!-- editable status (select-local) -->
+                    <span editable-text="user.lastName" e-form="tableform">
+                     {{ user.lastName || 'empty' }}
+                    </span>
+                    </td>
+                    <td>
+                    <!-- editable group (select-remote) -->
+                    <span editable-text="user.email" e-form="tableform">
+                     {{ user.email || 'empty' }}
+                    </span>
+                    </td>
+                    <td>
+                    <!-- editable group (select-remote) -->
+                    <span editable-text="user.phone" e-form="tableform">
+                     {{ user.phone || 'empty' }}
+                    </span>
+                    </td>
+                    <td>
+                    <!-- editable group (select-remote) -->
+                    <span editable-text="user.address" e-form="tableform">
+                     {{ user.address || 'empty' }}
+                    </span>
+                    </td>
+                    </tr>
+                    </table>
+
+                    <!-- buttons -->
+                    
+                    <div class="btn-form" ng-show="tableform.$visible">
+                    
+                    <button type="submit" ng-disabled="tableform.$waiting" class="btn btn-primary">save</button>
+                    <button type="button" ng-disabled="tableform.$waiting" ng-click="tableform.$cancel()" class="btn btn-default">cancel</button>
+                    </div> 
+                    </tbody>
+                    </table>
+                        </div>
+                    </form>
+                    </div>
+                        
+                        
+            </div>
+
+                          
+
+                         </div>
+                    </div>    
+                </div>
+            </div>
+            <!-- End Profile Content -->            
+        </div><!--/end row-->
+    </div>      
+    <!--=== End Profile ===-->
+
+ <!--=== Footer Version 1 ===-->
+    <div class="footer-v1">
+        
+
+        <div class="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">                     
+                        <p>
+                            2015 &copy; All Rights Reserved parentmedicare.com.
+                             <a href="">Privacy Policy</a> | <a href="">Terms of Service</a>
+                         
+                        </p>
+                    </div>
+                     <div class="col-md-4">                     
+                        <p class="pull-right">
+                          
+                            Powered by <a href="http://trenmax.in" target="_blank" class="tren"><img src="assets/img/trenmax_logo.png" width="120" height="30"></a>
+                        </p>
+                    </div>
+
+                </div>
+            </div> 
+        </div><!--/copyright-->
+    </div>
+    <!--=== End Footer Version 1 ===-->
+</div><!--/wrapper-->
+
+<!-- JS Global Compulsory -->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>          
+<script type="text/javascript" src="assets/plugins/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="assets/plugins/jquery/jquery-migrate.min.js"></script>
+<script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+<!-- JS Implementing Plugins -->
+<script type="text/javascript" src="assets/plugins/back-to-top.js"></script>
+<script type="text/javascript" src="assets/plugins/smoothScroll.js"></script>
+<script type="text/javascript" src="assets/plugins/sky-forms-pro/skyforms/js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="assets/plugins/sky-forms-pro/skyforms/js/jquery.validate.min.js"></script>
+<script type="text/javascript" src="assets/plugins/sky-forms-pro/skyforms/js/jquery.maskedinput.min.js"></script>
+<script type="text/javascript" src="assets/plugins/scrollbar/js/jquery.mCustomScrollbar.concat.min.js"></script>
+<!-- JS Customization -->
+<script type="text/javascript" src="assets/js/custom.js"></script>
+<!-- JS Page Level -->           
+<script type="text/javascript" src="assets/js/app.js"></script>
+<script type="text/javascript" src="assets/css/app.js"></script>
+<script type="text/javascript" src="assets/js/plugins/datepicker.js"></script>
+<script src="assets/css/xeditable.min.js"></script>
+
+
+<script type="text/javascript">
+    jQuery(document).ready(function() {
+        App.init();
+        App.initScrollBar();
+        Datepicker.initDatepicker();
+          
+    });
+</script>
+<!--[if lt IE 9]>
+    <script src="assets/plugins/respond.js"></script>
+    <script src="assets/plugins/html5shiv.js"></script>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="assets/plugins/sky-forms-pro/skyforms/js/sky-forms-ie8.js"></script>
+<![endif]-->
+
+<!--[if lt IE 10]>
+    <script src="assets/plugins/sky-forms-pro/skyforms/js/jquery.placeholder.min.js"></script>
+<![endif]-->
+
+</body>
+</html> 

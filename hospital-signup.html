@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!--> 
+<html lang="en" ng-app="app"> <!--<![endif]-->  
+<head>
+    <title>Welcome to Parent Medicare</title>
+
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="share_plus.ico">
+
+    <!-- CSS Global Compulsory -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- CSS Header and Footer -->
+    <link rel="stylesheet" href="assets/css/headers/header-v8.css">
+    <link rel="stylesheet" href="assets/css/footers/footer-v1.css">
+
+    <!-- CSS Implementing Plugins -->
+    <link rel="stylesheet" href="assets/plugins/animate.css">
+    <link rel="stylesheet" href="assets/plugins/line-icons/line-icons.css">
+    <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/theme-colors/default.css">
+    <link rel="stylesheet" href="assets/css/xeditable.css">
+    <link rel="stylesheet" href="assets/css/headers/simpletextrotator.css">
+    <link rel="stylesheet" href="assets/plugins/sky-forms-pro/skyforms/css/sky-forms.css">
+    <link rel="stylesheet" href="assets/plugins/sky-forms-pro/skyforms/custom/custom-sky-forms.css">
+
+
+    <!-- CSS Customization -->
+    <link rel="stylesheet" href="assets/css/custom.css">
+</head> 
+
+<body class="boxed-layout container">
+
+<div class="wrapper">
+<!--=== Header v3 ===-->    
+    <div class="header-v3 header-sticky">
+        <!-- Navbar -->
+        <div class="navbar navbar-default mega-menu" role="navigation">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="fa fa-bars"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">
+                        <img id="logo-header" src="assets/img/official-logo.png" alt="Parent Medicare">
+                    </a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse mega-menu navbar-responsive-collapse">
+                    <div class="container">
+                        <ul class="nav navbar-nav">
+                            <!-- Home -->
+                            <li class="">
+                                <a href="index.html">
+                                    About US
+                                </a>
+                            </li>
+                            <!-- End Home -->
+                            <li class="">
+                                <a href="services.html">
+                                    Services
+                                </a>
+                            </li>
+                           <!-- Blog -->
+                            <li class="dropdown active">
+                                <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
+                                    Hospitals
+                                </a>
+                                <ul class="dropdown-menu">
+                                   
+                                    <li><a href="">MOU</a></li>
+                                    <li class="active"><a href="hospital-signup.html">Hospitals Registration</a></li>                            
+                                </ul>
+                            </li>
+                            <!-- End Blog -->
+                            <!-- Blog -->
+                            <li class="dropdown">
+                                <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
+                                    Clients
+                                </a>
+                                <ul class="dropdown-menu">
+                                   
+                                    <li><a href="">Contract</a></li>
+                                    <li><a href="client-signup.html">Clients Registration</a></li>                            
+                                </ul>
+                            </li>
+                            <!-- End Blog -->
+                             <li class="">
+                                <a href="javascript:void(0);">
+                                    Contacts US
+                                </a>
+                            </li>
+                            <!-- Misc Pages -->
+                            <li class="">
+                                <a href="login">
+                                    Login
+                                </a>
+                            </li>                    
+                            <!-- End Misc Pages -->
+                        </ul>
+
+                    </div><!--/end container-->
+                </div><!--/navbar-collapse-->
+            </div>    
+        </div>            
+        <!-- End Navbar -->
+    </div>
+    <!--=== End Header v3 ===-->
+    <!--=== Breadcrumbs ===-->
+    <div class="breadcrumbs">
+        <div class="container">
+            <h1 class="pull-left">Registration </h1>
+            <ul class="pull-right breadcrumb">
+                <li><a href="index.html">Home</a></li>
+                <li class="active">Registration</li>
+            </ul>
+        </div>
+    </div><!--/breadcrumbs-->
+    <!--=== End Breadcrumbs ===-->
+
+    <!--=== Content Part ===-->
+    <div class="container content">
+        <div class="row">
+            <div class="col-md-9 col-sm-8 col-md-offset-1">
+            <form action="#" id="sky-form" class="sky-form">
+                    <header><h2 align="center" style="color:#2F87C7">Registration Form for Network Hospital</h2></header>
+                   <fieldset>
+                    <div class="row">
+                    <section class="col col-6 col-md-offset-3">  
+                       <button class="btn btn-block btn-u-small btn-android-inversed rounded">
+                         <i class="fa fa-eye"></i> View MOU
+                       </button>
+                        
+                    </section> 
+                    </div>              
+                        <div class="row">
+                            <section class="col col-6">
+                                <label class="input">
+                                    <i class="icon-prepend fa fa-user"></i>
+                                    <input type="text" name="fname" placeholder="Hospital Name">
+                                </label>
+                            </section>
+                            <section class="col col-6">
+                                <label class="input">
+                                    <i class="icon-prepend fa fa-location-arrow"></i>
+                                    <input type="text" name="locaation" placeholder="Location">
+                                </label>
+                            </section>
+                        </div>
+                        <section>
+                            <label class="textarea">
+                                <textarea placeholder="Registered Office Address" name="info" rows="3"></textarea>
+                            </label>
+                        </section>
+                        
+                        <div class="row">
+                            <section class="col col-6">
+                                <label class="input">
+                                    <i class="icon-prepend fa fa-envelope-o"></i>
+                                    <input type="email" name="email" placeholder="email">
+                                </label>
+                            </section>
+                            <section class="col col-6">
+                                <label class="input">
+                                    <i class="icon-prepend fa fa-phone"></i>
+                                    <input type="tel" name="phone" placeholder="Tel Number">
+                                </label>
+                            </section>
+                        </div>
+
+                       <div class="row">
+                            <section class="col col-6">
+                                <label class="select">
+                                    <select name="No of Bed">
+                                        <option disabled="" selected="" value="none">--Select Number of Bed--</option>
+                                        <option value="0">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                    </select>
+                                    <i></i>
+                                </label>
+                            </section>
+                            <section class="col col-6">
+                                <label class="select">
+                                    <select name="ICU">
+                                        <option disabled="" selected="" value="0">--Select Number of ICU Bed--</option>
+                                       <option value="0">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                    </select>
+                                    <i></i>
+                                </label>
+                            </section>
+                        </div>
+
+                        <h3 >Facility  Section</h3>
+              <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Instrument</th>
+                            <th class="hidden-sm">Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Digital X-ray</td>
+                            <td>
+                               
+                                  <section>
+                                 <div class="inline-group">
+                                   <label class="radio"><input type="radio" name="radio-inline" checked=""><i class="rounded-x"></i>Yes</label>
+                                   <label class="radio"><input type="radio" name="radio-inline"><i class="rounded-x"></i>No</label>
+                                </div>
+                                </section>
+                                
+                         </td>
+                                                 
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Ultra Sound Scan</td>
+                            <td>
+                                <section>
+                                 <div class="inline-group">
+                                   <label class="radio"><input type="radio" name="radio-inline" checked=""><i class="rounded-x"></i>Yes</label>
+                                   <label class="radio"><input type="radio" name="radio-inline"><i class="rounded-x"></i>No</label>
+                                </div>
+                                </section>
+                            </td>
+                                                    
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>CT-Scan</td>
+                            <td>
+                                <section>
+                                 <div class="inline-group">
+                                   <label class="radio"><input type="radio" name="radio-inline" checked=""><i class="rounded-x"></i>Yes</label>
+                                   <label class="radio"><input type="radio" name="radio-inline"><i class="rounded-x"></i>No</label>
+                                </div>
+                                </section>
+                            </td>
+                                                    
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>MRI</td>
+                            <td>
+                                <section>
+                                 <div class="inline-group">
+                                   <label class="radio"><input type="radio" name="radio-inline" checked=""><i class="rounded-x"></i>Yes</label>
+                                   <label class="radio"><input type="radio" name="radio-inline"><i class="rounded-x"></i>No</label>
+                                </div>
+                                </section>
+                            </td>
+                                                        
+                        </tr>
+                         <tr>
+                            <td>5</td>
+                            <td>Dialysis</td>
+                            <td>
+                                <section>
+                                 <div class="inline-group">
+                                   <label class="radio"><input type="radio" name="radio-inline" checked=""><i class="rounded-x"></i>Yes</label>
+                                   <label class="radio"><input type="radio" name="radio-inline"><i class="rounded-x"></i>No</label>
+                                </div>
+                                </section>
+                            </td>
+                                                        
+                        </tr>
+                         <tr>
+                            <td>6</td>
+                            <td>Ambulance Service</td>
+                            <td>
+                                <section>
+                                 <div class="inline-group">
+                                   <label class="radio"><input type="radio" name="radio-inline" checked=""><i class="rounded-x"></i>Yes</label>
+                                   <label class="radio"><input type="radio" name="radio-inline"><i class="rounded-x"></i>No</label>
+                                </div>
+                                </section>
+                            </td>
+                                                        
+                        </tr>
+                    </tbody>
+                </table>
+                  <div class="row">
+                            <section class="col col-3">
+                             <label class="label">Download excel file</label>
+                            <label for="file" class="input input-file">
+                              <button class="btn btn-block btn-u-lg btn-android-inversed rounded">
+                      <i class="fa fa-download"></i> Download
+                    </button>
+                            </label>
+                            </section>
+                            <section class="col col-6">
+                                
+                            <label class="label">Choose the filled excel File</label>
+                            <label for="file" class="input input-file">
+                                <div class="button">
+                                    <input type="file" id="file" onchange="this.parentNode.nextSibling.value = this.value">Browse</div>
+                                    <input type="text" readonly="">
+                            </label>
+                             <div class="">
+                           <h5>Please download the excel file & fill the above details & upload. Please use separate forms for separate locations</h5>
+                        </div>
+                        
+                            </section>
+                            <section class="col col-3">
+                             <label class="label">Upload the filled excel file</label>
+                            <label for="file" class="input input-file">
+                              <button class="btn btn-block btn-u-lg btn-bitbucket-inversed rounded">
+                      <i class="fa fa-upload"></i> Upload
+                    </button>
+                            </label>
+                            </section>
+                        </div>
+                    <footer>
+                         <div class="row">
+                            <section class="col col-6">
+                              <button type="submit" class="btn-u btn-block">Submit</button>
+                           </section>
+                            <section class="col col-6">
+                             <button type="submit" class="btn-u btn-u-red btn-block">Reset</button>
+                            </section>
+                        </div>
+                    </footer>  
+
+                    <br>
+                  </form> 
+                 
+            
+                   </div>
+               </fieldset>
+
+                 
+           
+                </div>
+            </div>
+           
+        </div>          
+    </div><!--/container-->     
+    <!--=== End Content Part ===-->
+
+<!--=== Footer Version 1 ===-->
+    <div class="footer-v1">
+        <div class="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">                     
+                        <p>
+                            2015 &copy; All Rights Reserved parentmedicare.com.
+                         
+                        </p>
+                    </div>
+                     <div class="col-md-4">                     
+                        <p>
+                           <a href="">Privacy Policy</a> | <a href="">Terms of Service</a>
+                        </p>
+                    </div>
+                </div>
+            </div> 
+        </div><!--/copyright-->
+    </div>
+    <!--=== End Footer Version 1 ===-->
+</div><!--/End Wrapepr-->
+
+<!-- JS Global Compulsory -->           
+<script type="text/javascript" src="assets/plugins/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="assets/plugins/jquery/jquery-migrate.min.js"></script>
+<script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+<!-- JS Implementing Plugins -->
+<script type="text/javascript" src="assets/plugins/back-to-top.js"></script>
+<script type="text/javascript" src="assets/plugins/smoothScroll.js"></script>
+<script src="assets/plugins/sky-forms-pro/skyforms/js/jquery.validate.min.js"></script>
+<script src="assets/plugins/sky-forms-pro/skyforms/js/jquery.maskedinput.min.js"></script>
+<script src="assets/plugins/sky-forms-pro/skyforms/js/jquery-ui.min.js"></script>
+<script src="assets/plugins/sky-forms-pro/skyforms/js/jquery.form.min.js"></script>
+<!-- JS Customization -->
+<script type="text/javascript" src="assets/js/custom.js"></script>
+<!-- JS Page Level -->           
+<script type="text/javascript" src="assets/js/app.js"></script>
+
+<!--[if lt IE 9]>
+    <script src="assets/plugins/respond.js"></script>
+    <script src="assets/plugins/html5shiv.js"></script>
+    <script src="assets/plugins/placeholder-IE-fixes.js"></script>
+    <script src="assets/plugins/sky-forms-pro/skyforms/js/sky-forms-ie8.js"></script>
+<![endif]-->
+
+<!--[if lt IE 10]>
+    <script src="assets/plugins/sky-forms/version-2.0.1/js/jquery.placeholder.min.js"></script>
+<![endif]-->      
+
+</body>
+</html>
